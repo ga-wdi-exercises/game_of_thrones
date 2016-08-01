@@ -1,9 +1,0 @@
-<%= form_for([@character, @quote]) do |f| %>
-  <p class="alert"><%= @character.errors.full_messages.first if @quote.errors.any? %></p>
-
-  <%= f.label :saying %>
-  <%= f.text_field :saying %>
-
-  <%= f.submit %>
-
-<% end %>

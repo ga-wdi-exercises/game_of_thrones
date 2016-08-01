@@ -2,7 +2,7 @@
 
 When you play the Game of Rails, you win or you die.
 
-You'll be making a Ruby on Rails app connecting Game of Thrones characters to their respective houses. Implement full CRUD functionality on the models. 
+You'll be making a Ruby on Rails app connecting Game of Thrones characters to their respective houses. Implement full CRUD functionality on the models.
 
 We will start off with two models: `Houses` and `Characters`.
 
@@ -11,6 +11,7 @@ We will start off with two models: `Houses` and `Characters`.
 - Create ERD for Houses and Characters
 - Create models for Houses and Characters
 - Create migrations for Houses and Characters
+- Create seed data for Houses and Characters
 
 ## Views + Controllers
 
