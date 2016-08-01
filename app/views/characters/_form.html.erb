@@ -1,0 +1,12 @@
+<%= form_for([@house, @character]) do |f| %>
+  <p class="alert"><%= @house.errors.full_messages.first if @character.errors.any? %></p>
+
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+
+  <%= f.label :img_url %>
+  <%= f.text_field :img_url %>
+
+  <%= f.submit %>
+
+<% end %>

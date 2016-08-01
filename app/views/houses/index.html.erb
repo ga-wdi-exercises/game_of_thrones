@@ -1,0 +1,10 @@
+<h2>Houses of Westeros</h2>
+
+  <h2>Add New House <%= link_to "(+)", new_house_path %></h2>
+
+  <% @houses.each do |house| %>
+      <h3><%= link_to house.name, house_path(house) %>  <%= link_to "(edit)", edit_house_path(house) %></h3> 
+      <p><%= link_to 'Delete House', house_path(house),
+              method: :delete,
+              data: { confirm: 'You dare delete this house?' } %></p>
+  <% end %>
