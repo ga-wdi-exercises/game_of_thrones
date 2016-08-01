@@ -9,8 +9,7 @@ We will start off with two models: `Houses` and `Characters`.
 ## Models + Migrations
 
 - Create ERD for Houses and Characters
-- Create models for Houses and Characters
-- Create migrations for Houses and Characters
+- Create models and migrations for Houses and Characters
 - Create seed data for Houses and Characters
 
 ## Views + Controllers
@@ -21,10 +20,13 @@ We will start off with two models: `Houses` and `Characters`.
 
 - Use links, forms, etc. to helpers.
 
-## Routes
+## User Notifications
 
-- Implement nested routes.
+- Implement validations, error-handling and flash.
+
 
 ## Bonus
 
+- Implement nested routes
 - Add a third model for quotes associated with a character.
+- Try out many-to-many relationships with tags to label characters. A character can have many tags and a tag can be associated with many characters. One way to tag characters can be based on personality traits. 
