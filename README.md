@@ -2,31 +2,33 @@
 
 When you play the Game of Rails, you win or you die.
 
-You'll be making a Ruby on Rails app connecting Game of Thrones characters to their respective houses. Implement full CRUD functionality on the models.
+You'll be making a Ruby on Rails app connecting Game of Thrones characters to their respective houses. Implement **full CRUD functionality** on the models.
 
-We will start off with two models: `Houses` and `Characters`.
+We will start off with two models: `Houses` and `Characters`. Houses have many characters.
 
-## Models + Migrations
+## Models and Migrations
 
-- Create ERD for Houses and Characters
-- Create models and migrations for Houses and Characters
-- Create seed data for Houses and Characters
+- Create an ERD for your `houses` and `characters` tables
+- Create corresponding models and migrations
+- Create seed data that generates some houses and characters
 
-## Views + Controllers
+> Use [this](http://gameofthrones.wikia.com/wiki/Game_of_Thrones_Wiki) if you need some source material for your seed file. Or just make up some names!
+
+## Views and Controllers
 
 - Add views and controllers.
 
-## Helpers
+## User Authentication
 
-- Use links, forms, etc. to helpers.
+Once you have completed all of the above and implemented full CRUD functionality for Houses and Characters, add a third User model using Devise.
 
-## User Notifications
+- You should be able to sign up, sign in and sign out of the app
+- Only logged-in users should be able to create a House or Character
+- A user can only update or delete a House or Character he/she created
 
-- Implement validations, error-handling and flash.
-
+> Think about what associations you will have to set up in order to implement these features
 
 ## Bonus
 
-- Implement nested routes
 - Add a third model for quotes associated with a character.
-- Try out many-to-many relationships with tags to label characters. A character can have many tags and a tag can be associated with many characters. One way to tag characters can be based on personality traits. 
+- Try out many-to-many relationships with Categories to label Characters. A Character can have many Categories (e.g., "merciless") and a Category can be associated with many Characters. A Tag model/table could be helpful here...
