@@ -6,6 +6,8 @@ You'll be making a Ruby on Rails app connecting Game of Thrones characters to th
 
 We will start off with two models: `Houses` and `Characters`. Houses have many characters.
 
+The styling of the app is completely up to you.
+
 ## Models and Migrations
 
 - Create an ERD for your `houses` and `characters` tables
@@ -18,9 +20,9 @@ We will start off with two models: `Houses` and `Characters`. Houses have many c
 
 - Add views and controllers.
 
-## User Authentication
+## Bonus: User Authentication
 
-Once you have completed all of the above and implemented full CRUD functionality for Houses and Characters, add a third User model using Devise.
+Once -- **and only** -- after you have completed all of the above and implemented full CRUD functionality for Houses and Characters, add a third User model using Devise.
 
 - You should be able to sign up, sign in and sign out of the app
 - Only logged-in users should be able to create a House or Character
@@ -28,7 +30,7 @@ Once you have completed all of the above and implemented full CRUD functionality
 
 > Think about what associations you will have to set up in order to implement these features
 
-## Bonus
+## Some More Bonuses
 
 - Add a third model for quotes associated with a character.
 - Try out many-to-many relationships with Categories to label Characters. A Character can have many Categories (e.g., "merciless") and a Category can be associated with many Characters. A Tag model/table could be helpful here...
