@@ -43,3 +43,4 @@ Once -- **and only after** -- you have completed all of the above and implemente
 - Add a third model for quotes associated with a character.
 - Try out many-to-many relationships with Categories to label Characters. A Character can have many Categories (e.g., "merciless") and a Category can be associated with many Characters. A Tag model/table could be helpful here...
 - Create an admin role (i.e., somebody who can update/delete anything) using [CanCanCan](https://github.com/CanCanCommunity/cancancan).
+- Add a ***COMBAT MODE*** using custom routes and controllers (models are not necessary for this feature, but certainly could be used to implement it)
