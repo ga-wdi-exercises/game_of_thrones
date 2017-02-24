@@ -11,7 +11,7 @@ The styling of the app is completely up to you. With that said, a cool GoT theme
 ```css
 @font-face {
   font-family: "thrones";
-  src: font-url('game_of_thrones.ttf') format("truetype");
+  src: url('game_of_thrones.ttf') format("truetype");
 }
 ```
 
