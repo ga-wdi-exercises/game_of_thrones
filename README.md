@@ -9,9 +9,16 @@ We will start off with two models: `Houses` and `Characters`. Houses have many c
 The styling of the app is completely up to you. With that said, a cool GoT themed font has been included in this repository for you to integrate if you choose. To add it, in your `application.css` file, add the following:
 
 ```css
+/* assets/stylesheets */
 @font-face {
   font-family: "thrones";
   src: url('game_of_thrones.ttf') format("truetype");
+}
+
+/* assets/fonts */
+@font-face {
+  font-family: "thrones";
+  src: font-url('game_of_thrones.ttf') format("truetype");
 }
 ```
 
