@@ -4,9 +4,9 @@ When you play the Game of Rails, you win or you die.
 
 You'll be making a Ruby on Rails app connecting Game of Thrones characters to their respective houses. Implement **full CRUD functionality** on the models.
 
-We will start off with two models: `Houses` and `Characters`. Houses have many characters. Characters belong to a single house.
+You will start off with two models: `House` and `Character`. Houses have many characters. Characters belong to a single house.
 
-The styling of the app is completely up to you. With that said, a cool GoT themed font has been included in this repository for you to integrate if you choose. To add it, in your `application.css` file, add the following:
+The styling of the app is completely up to you. With that said, a cool GoT-themed font has been included in this repository for you to integrate if you choose. To use it, add the following to `application.css`...
 
 ```css
 /* assets/stylesheets */
@@ -32,22 +32,22 @@ The styling of the app is completely up to you. With that said, a cool GoT theme
 
 ## Views and Controllers
 
-- Add controllers and views for to allow for full **CRUD** functionality for both of your models.
+- Add controllers and views so that both of your models have full CRUD functionality
 - Add styling to your app by adding / modifying stylesheets in `app/assets/stylesheets`
 
 ## Bonus: User Authentication
 
-Once -- **and only after** -- you have completed all of the above and implemented full CRUD functionality for Houses and Characters, add a third User model using Devise.
+After -- **and only after** -- you have completed all of the above and implemented full CRUD functionality for houses and characters, implement a third `User` model with Devise.
 
 - You should be able to sign up, sign in and sign out of the app
-- Only logged-in users should be able to create a House or Character
-- A user can only update or delete a House or Character he/she created
+- Only logged-in users should be able to create a house or character
+- A user can only update or delete a house or character he/she created
 
-> Think about what associations you will have to set up in order to implement these features
+> Think about what associations you will have to set up in order to implement these features...
 
 ## Some More Bonuses
 
-- Add a third model for quotes associated with a character.
-- Try out many-to-many relationships with Categories to label Characters. A Character can have many Categories (e.g., "merciless") and a Category can be associated with many Characters. A Tag model/table could be helpful here...
-- Create an admin role (i.e., somebody who can update/delete anything) using [CanCanCan](https://github.com/CanCanCommunity/cancancan).
-- Add a ***COMBAT MODE*** using custom routes and controllers (models are not necessary for this feature, but certainly could be used to implement it)
+- Add a third model for quotes associated with a character
+- Create a `Category` model that has a many-to-many relationship with `Character`. A character can have many categories (e.g., "merciless") and a category can be associated with many characters. A `Tag` model/join table might be helpful here...
+- Create an admin role (i.e., somebody who can update/delete anything) using [CanCanCan](https://github.com/CanCanCommunity/cancancan)
+- Add a combat mode using custom routes and controllers that pits two characters against each other. Only one can survive! The logic that determines who wins is up to you. Models are not necessary for this feature, but certainly could be used to implement it.
