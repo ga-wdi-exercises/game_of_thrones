@@ -49,5 +49,5 @@ After -- **and only after** -- you have completed all of the above and implement
 
 - Add a third model for quotes associated with a character
 - Create a `Category` model that has a many-to-many relationship with `Character`. A character can have many categories (e.g., "merciless") and a category can be associated with many characters. A `Tag` model/join table might be helpful here...
-- Create an admin role (i.e., somebody who can update/delete anything) using [CanCanCan](https://github.com/CanCanCommunity/cancancan)
+- Create an admin role (i.e., somebody who can update/delete anything) using [CanCanCan](https://github.com/CanCanCommunity/cancancan). [This lesson plan](https://github.com/ga-wdi-lessons/cancancan) may come in handy.
 - Add a combat mode using custom routes and controllers that pits two characters against each other. Only one can survive! The logic that determines who wins is up to you. Models are not necessary for this feature, but certainly could be used to implement it.
